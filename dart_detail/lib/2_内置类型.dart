@@ -95,6 +95,8 @@ void testSet() {
 /// 6、Maps 集合
 void testMap() {
   // 跟java类似
+  var map = {'name':'danke', 'age':18};
+  print('name = ${map['name']}, age = ${map['age']}');
 }
 
 /// 7、Runes 符号字符，符号字符在dart里面是32位的
