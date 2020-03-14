@@ -1,7 +1,6 @@
 main() {
   testNumbers();
   testStrings();
-  testStringBuffer();
   testBoolean();
   testList();
   testSet();
@@ -37,24 +36,6 @@ void testStrings() {
   print("s4: \n" + s4);
 
   // 3、可以在字符串中使用表达式： ${expression},如果表达式是一个标识符，可以省略 {}，如果表达式的结果为一个对象，则 Dart 会调用对象的 toString() 函数来获取一个字符串。
-}
-
-void testStringBuffer() {
-  // java写法
-  StringBuffer sb1 = StringBuffer();
-  sb1.write("123");
-  sb1.write("fsdfsf");
-  sb1.write("55erewr");
-  print("sb1: \n" + sb1.toString());
-
-  // dart .. 可以实现链式调用
-  StringBuffer sb2 = StringBuffer();
-  sb2
-    ..write("123")
-    ..write("fsdfsf")
-    ..write("55erewr")
-    ..writeAll(['a', 'b', 'c']);
-  print("sb2: \n" + sb2.toString());
 }
 
 /// 3、Booleans 布尔值
