@@ -1,9 +1,9 @@
 main() {
   var rectangle = Rectangle(0,0,1,1);
   print([rectangle.top, rectangle.bottom, rectangle.left, rectangle.right, rectangle.width, rectangle.height]);
-  rectangle.right = 20;
-  rectangle.bottom = 30;
-  print([rectangle.top, rectangle.bottom, rectangle.left, rectangle.right, rectangle.width, rectangle.height]);
+  rectangle.right = 20; // set
+  rectangle.bottom = 30; // set
+  print([rectangle.top, rectangle.bottom, rectangle.left, rectangle.right, rectangle.width, rectangle.height]); // get
 }
 
 class Rectangle {
