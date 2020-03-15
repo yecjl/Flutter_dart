@@ -6,7 +6,7 @@ main() {
   /// 2、子类自己重新了这个方法，按照子类的值
   print('class C = ${C().getMessage()}');
 
-  /// implements 表示需要重写这个方法，而A中重写了这个方法，那就按照with最后实现的方法的值
+  /// implements 表示需要实现这个方法，而A中重写了这个方法，那就按照with最后实现的方法的值
   print('class D = ${D().getMessage()}');
 }
 
